@@ -1,31 +1,32 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextInput } from 'react-native';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
 
+
 export default function TabOneScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+    <View style={styles.container} lightColor="#eee" darkColor="rgba(255,255,255,0.1)">
+      <View style={styles.filter}></View>
+      <Text style={{...styles.text, paddingTop: 10}}>just circle</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
     justifyContent: 'center',
+    height: "100%"
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
+  text: {
+    fontSize: 16,
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
+  filter: {
+    width: 50,
+    height: 50,
+    backgroundColor: "#3366ff",
+    borderRadius: 100
+  }
 });

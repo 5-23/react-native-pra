@@ -22,6 +22,7 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
       }}>
+        {/* Tab.Screen 추가하면 텝 추가됨 */}
       <Tabs.Screen
         name="index"
         options={{
@@ -47,6 +48,14 @@ export default function TabLayout() {
         name="two"
         options={{
           title: 'Tab Two',
+          // tabBarLabel: "Updates",
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="three"
+        options={{
+          title: 'Tab Three',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
