@@ -56,7 +56,7 @@ export default function TabLayout() {
         name="three"
         options={{
           title: 'Tab Three',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="retweet" color={color} />,
         }}
       />
     </Tabs>

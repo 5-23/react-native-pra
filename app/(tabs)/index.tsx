@@ -5,6 +5,7 @@ import { Text, View } from '../../components/Themed';
 
 
 export default function TabOneScreen() {
+  let a: number = 10;
   return (
     <View style={styles.container} lightColor="#eee" darkColor="rgba(255,255,255,0.1)">
       <View style={styles.filter}></View>
@@ -27,6 +28,8 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     backgroundColor: "#3366ff",
-    borderRadius: 100
+    borderRadius: 15,
+    transform: "rotate(45deg)",
+    // filter: "blur(10px)"
   }
 });
